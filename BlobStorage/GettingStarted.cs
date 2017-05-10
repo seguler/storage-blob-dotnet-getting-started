@@ -36,6 +36,7 @@ namespace BlobStorage
     /// </summary>
     public static class GettingStarted
     {
+        #region sample_Microsoft.Azure.Storage.UploadBlob_Microsoft.Azure.Storage.DownloadBlob_Microsoft.Azure.Storage.BlobRequestOptions_Microsoft.Azure.Storage.IRetryPolicy_Microsoft.Azure.Storage.OperationContext_Microsoft.Azure.Storage.CloudBlob_Microsoft.Azure.Storage.CloudBlockBlob_Microsoft.Azure.Storage.CloudPageBlob
         // Prefix for containers created by the sample.
         private const string ContainerPrefix = "sample-";
 
@@ -55,13 +56,16 @@ namespace BlobStorage
             Console.WriteLine("\nPage Blob Sample");
             BasicStoragePageBlobOperationsAsync().Wait();
         }
-
+        
+        #endregion
+            
         /// <summary>
         /// Basic operations to work with block blobs
         /// </summary>
         /// <returns>A Task object.</returns>
         private static async Task BasicStorageBlockBlobOperationsAsync()
         {
+            #region sample_Microsoft.Azure.Storage.UploadBlob_Microsoft.Azure.Storage.DownloadBlob_Microsoft.Azure.Storage.BlobRequestOptions_Microsoft.Azure.Storage.IRetryPolicy_Microsoft.
             const string ImageToUpload = "HelloWorld.png";
             string containerName = ContainerPrefix + Guid.NewGuid();
 
